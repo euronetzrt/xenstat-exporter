@@ -14,7 +14,9 @@ func main() {
 
 	http.Handle("/metrics", promhttp.HandlerFor(
 		registry,
-		promhttp.HandlerOpts{},
+		promhttp.HandlerOpts{
+			MaxRequestsInFlight: 5,
+		},
 	))
 
 	http.ListenAndServe(":9002", nil)
