@@ -8,7 +8,7 @@ import "C"
 // VCPU mirrors xenstat_vcpu
 type VCPU struct {
 	Idx uint
-	v *C.xenstat_vcpu
+	v   *C.xenstat_vcpu
 }
 
 // Online returns wether a VCPU is online

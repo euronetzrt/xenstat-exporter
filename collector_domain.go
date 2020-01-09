@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/prometheus/client_golang/prometheus"
 	"github.com/euronetzrt/xenstat-exporter/xenstat"
+	"github.com/prometheus/client_golang/prometheus"
 )
 
 type domainCollector struct {
