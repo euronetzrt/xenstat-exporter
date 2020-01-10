@@ -30,12 +30,12 @@ func (n *Node) XenVersion() string {
 }
 
 // TotMem returns the amount of total memory on a node
-func (n *Node)TotMem() uint64 {
+func (n *Node) TotMem() uint64 {
 	return uint64(C.xenstat_node_tot_mem(n.n))
 }
 
 // FreeMem returns the amount of free memory on a node
-func (n *Node)FreeMem() uint64 {
+func (n *Node) FreeMem() uint64 {
 	return uint64(C.xenstat_node_free_mem(n.n))
 }
 
@@ -55,7 +55,7 @@ func (n *Node) DomainByIndex(idx uint) *Domain {
 
 // NumCpus returns the number of CPUs existing on a node
 func (n *Node) NumCpus() uint {
-	return uint(C.xenstat_node_num_cpus(n.n));
+	return uint(C.xenstat_node_num_cpus(n.n))
 }
 
 // CPUHz returns information about the CPU speed
