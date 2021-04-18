@@ -1,7 +1,8 @@
 package xenstat
 
 /*
-#cgo pkg-config: xenstat
+#cgo pkg-config: xenlight
+#cgo LDFLAGS: -L/usr/lib/xen-4.8/lib -Wl,-rpath /usr/lib/xen-4.8/lib -lxenstat
 #include <xenstat.h>
 */
 import "C"

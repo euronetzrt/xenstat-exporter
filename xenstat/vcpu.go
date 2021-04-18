@@ -18,5 +18,5 @@ func (v *VCPU) Online() uint {
 
 // Usage returns CPU usage of a VCPU
 func (v *VCPU) Usage() uint64 {
-	return uint64(C.xenstat_vcpu_ns(v.v))
+	return uint64(C.xenstat_vcpu_ns(v.v)) & ^XEN_RUNSTATE_UPDATE
 }

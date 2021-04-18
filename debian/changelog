@@ -1,3 +1,9 @@
+xenstat-exporter (0.1.1-stretch1) stable; urgency=medium
+
+  * Building release 0.1.1 for Stretch.
+
+ -- Richard Kojedzinszky <richard@kojedz.in>  Sun, 18 Apr 2021 09:47:34 +0200
+
 xenstat-exporter (0.1.1) stable; urgency=medium
 
   * Release 0.1.1.
