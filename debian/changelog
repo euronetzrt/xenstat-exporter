@@ -1,0 +1,11 @@
+xenstat-exporter (0.1.1-bullseye1) stable; urgency=medium
+
+  * Release 0.1.1.
+
+ -- Richard Kojedzinszky <richard@kojedz.in>  Sun, 18 Apr 2021 09:04:09 +0200
+
+xenstat-exporter (0.1.0) stable; urgency=medium
+
+  * Initial release.
+
+ -- Richard Kojedzinszky <richard.kojedzinszky@euronetrt.hu>  Wed, 13 Jan 2021 10:45:58 +0100

@@ -1,0 +1,11 @@
+[Unit]
+Description=Xen statistics prometheus exporter
+
+[Service]
+Environment=GOGC=50
+ExecStart=/usr/bin/xenstat-exporter
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

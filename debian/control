@@ -1,0 +1,12 @@
+Source: xenstat-exporter
+Section: admin
+Priority: optional
+Maintainer: Richard Kojedzinszky <kojedzinszky.richard@euronetrt.hu>
+Build-Depends: debhelper (>= 11), libxen-dev
+Standards-Version: 4.1.3
+Homepage: https://github.com/euronetzrt/xenstat-exporter
+
+Package: xenstat-exporter
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Xen statistics prometheus exporter
