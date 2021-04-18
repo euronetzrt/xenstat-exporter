@@ -1,0 +1,11 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: xenstat-exporter
+Source: https://github.com/euronetzrt/xenstat-exporter
+
+Files: *
+Copyright: 2021 Euronet Informatika Magyarorszag Zrt.
+License: BSD
+
+Files: debian/*
+Copyright: 2021 Euronet Informatika Magyarorszag Zrt.
+License: BSD
