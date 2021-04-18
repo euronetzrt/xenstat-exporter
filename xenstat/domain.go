@@ -5,8 +5,6 @@ package xenstat
 */
 import "C"
 
-const XEN_RUNSTATE_UPDATE = uint64(1) << 63
-
 // Domain mirrors xenstat_domain
 type Domain struct {
 	d *C.xenstat_domain
@@ -19,7 +17,7 @@ func (d *Domain) Name() string {
 
 // CPUNs returns information about how much CPU time has been used
 func (d *Domain) CPUNs() uint64 {
-	return uint64(C.xenstat_domain_cpu_ns(d.d)) & ^XEN_RUNSTATE_UPDATE
+	return uint64(C.xenstat_domain_cpu_ns(d.d))
 }
 
 // NumVCPUs returns the number of VCPUs allocated to a domain
