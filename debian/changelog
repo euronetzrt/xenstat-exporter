@@ -1,3 +1,9 @@
+xenstat-exporter (0.1.2) stable; urgency=medium
+
+  * Release 0.1.2: version renumber
+
+ -- Richard Kojedzinszky <richard.kojedzinszky@euronetrt.hu>  Mon, 18 Oct 2021 15:17:10 +0200
+
 xenstat-exporter (0.1.1-bullseye1) stable; urgency=medium
 
   * Release 0.1.1.
